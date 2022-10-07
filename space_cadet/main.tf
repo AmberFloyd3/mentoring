@@ -19,7 +19,7 @@ terraform {
 
 
 resource "aws_instance" "scoobysnack" {
-  ami           = ami-09208e69ff3feb1db
+  ami           = var.ami_id
   instance_type = "t1.micro"
 
   tags = {
